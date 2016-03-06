@@ -1,0 +1,31 @@
+#!/usr/bin/env sh
+
+project=${PWD##*/}
+echo "Setting up ${project}"
+# Exit if any subcommand fails
+set -e
+
+# Set up configurable environment variables
+if [ ! -f .env ]; then
+  cp .sample.env .env
+fi
+if [ ! -f .ruby-version ]; then
+  cp .ruby-version.sample .ruby-version
+  cd .
+fi
+
+# Set up Ruby dependencies via Bundler
+gem install bundler --conservative
+bundle check || bundle install
+
+# Add binstubs to PATH via export PATH=".git/safe/../../bin:$PATH" in ~/.zshenv
+mkdir -p .git/safe
+
+echo ""
+echo "# TODO: "
+echo ""
+echo "* Manually configure .env if you haven't already"
+echo "* Manually configure config/database.yml if you haven't already"
+echo ""
+
+echo "Finished setting up ${project}"

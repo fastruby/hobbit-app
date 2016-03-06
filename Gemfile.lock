@@ -1,0 +1,45 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bundler-audit (0.5.0)
+      bundler (~> 1.2)
+      thor (~> 0.18)
+    dotenv (2.1.0)
+    hiredis (0.6.1)
+    hobbit (0.6.1)
+      rack
+    minitest (5.8.4)
+    msgpack (0.5.12)
+    nido (1.0.0)
+    ohm (2.3.0)
+      msgpack (~> 0.5.0)
+      nido
+      redic (~> 1.5.0)
+      stal
+    puma (3.1.0)
+    rack (1.6.4)
+    rack-protection (1.5.3)
+      rack
+    redic (1.5.0)
+      hiredis
+    shotgun (0.9.1)
+      rack (>= 1.0)
+    stal (0.1.0)
+      redic
+    thor (0.19.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler-audit (~> 0.5.0)
+  dotenv (~> 2.1.0)
+  hobbit (~> 0.6.1)
+  minitest (~> 5.8.4)
+  ohm (~> 2.3.0)
+  puma (~> 3.1.0)
+  rack-protection (~> 1.5.3)
+  shotgun (~> 0.9.1)
+
+BUNDLED WITH
+   1.11.2
