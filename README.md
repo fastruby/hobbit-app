@@ -28,4 +28,3 @@ Development:
 ## License
 
 See the [LICENSE](https://github.com/ombulabs/hobbit-app/blob/master/LICENSE).
-Mixpanel
