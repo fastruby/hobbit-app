@@ -1,0 +1,5 @@
+# rbenv / rvm
+.ruby-version
+
+# environment
+.env
