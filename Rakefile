@@ -1,6 +1,7 @@
 require 'bundler/setup'
 require 'rake'
 require 'rake/testtask'
+Dir["./tasks/**/*.rake"].each { |f| load(f) }
 
 Bundler.setup
 
