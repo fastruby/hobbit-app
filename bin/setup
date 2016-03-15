@@ -25,7 +25,6 @@ echo ""
 echo "# TODO: "
 echo ""
 echo "* Manually configure .env if you haven't already"
-echo "* Manually configure config/database.yml if you haven't already"
 echo ""
 
 echo "Finished setting up ${project}"
