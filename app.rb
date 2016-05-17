@@ -1,4 +1,5 @@
 require "tilt"
+require "tilt/erb"
 require "rack/protection"
 require "hobbit"
 require "hobbit/contrib"
@@ -23,6 +24,10 @@ class App < Hobbit::Base
 
   use Rack::Static, root: "public",
                     urls: ["/javascripts", "/stylesheets", "/images"]
+
+  def params
+    request.params
+  end
 
   get "/" do
     render "index"
