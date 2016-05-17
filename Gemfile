@@ -10,7 +10,7 @@ gem "tilt", "~> 2.0.2"
 group :development do
   gem "shotgun", "~> 0.9.1"
   gem "bundler-audit", "~> 0.5.0"
-  gem "byebug"
+  gem "byebug", "~> 9.0.3"
 end
 
 group :production do
